@@ -1,0 +1,177 @@
+/* Global Styling */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+footer{
+
+}
+
+.container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+}
+
+/* Full Page Header */
+
+.header{
+ display: table;
+ height: 100%;
+ max-height: 1050px;
+ width: 100%;
+ left: 0;
+ right: 0;
+ position: relative;
+ background: url(../img/seizmograph.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.header p{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22.0vh;
+  font-family: 'Creepster';
+  color: red;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* Sidebar Default */
+.sidebar-toggle{
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  padding: 5px;
+  border: 5px;
+  margin: 5px;
+  color: white;
+  background-image: url(../img/dark_geometric.png);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar-toggle:hover{
+  color: #717780;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar-wrapper{
+  margin-left: -200px;
+  left: 0;
+  width: 200px;
+  background-image: url(../img/dark_geometric.png);
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar-wrapper ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-wrapper ul li{
+  margin: 0;
+}
+
+.sidebar-wrapper ul li a i{
+  margin-right: 20px;
+}
+
+.sidebar-wrapper ul li a{
+  padding: 15px 20px;
+  font-family: 'Questrial', serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #303336;
+}
+
+.sidebar-wrapper ul li:hover a{
+  background: url(../img/escher.png);
+}
+
+/* Sidebar Active */
+
+.header.active,
+.sidebar-wrapper.active, .sidebar-toggle.active,
+.content-wrapper.active, .main-content.active{
+  left: 200px;
+  overflow: hidden;
+}
+
+.content-wrapper.active{
+  padding-right: 180px;
+}
+
+.header.active{
+  width: calc(100% - 200px);
+}
+
+/* Content */
+
+.content-wrapper{
+  min-height: 75vh;
+    width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  background: url(../img/cubes.png);
+  opacity: 20%;
+  -webkit-transition:  all 0.3s ease-in-out;
+  -moz-transition:  all 0.3s ease-in-out;
+  -ms-transition:  all 0.3s ease-in-out;
+  -o-transition:  all 0.3s ease-in-out;
+  transition:  all 0.3s ease-in-out;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  padding-top: 75px;
+  padding-right: 105px;
+  position: relative;
+
+  font-family: 'Roboto Slab';
+  line-height: 150%;
+  font-weight: 100;
+
+
+  -webkit-transition:  all 0.3s ease-in-out;
+  -moz-transition:  all 0.3s ease-in-out;
+  -ms-transition:  all 0.3s ease-in-out;
+  -o-transition:  all 0.3s ease-in-out;
+  transition:  all 0.3s ease-in-out;
+}
